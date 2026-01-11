@@ -1,4 +1,6 @@
 import { MdOutlineMenuBook } from "react-icons/md";
+import { education } from "../content/milestones";
+import { MilestoneTimeline } from "../components/MilestoneTimeline";
 
 export const Education = () => {
   return (
@@ -11,8 +13,8 @@ export const Education = () => {
         </header>
   
         {/* Contenido */}
-        <div className="w-full min-h-[120px] bg-white/60 backdrop-blur-md rounded-2xl p-6 shadow-sm">
-          
+        <div className="w-full min-h-[120px]">
+          <MilestoneTimeline milestones={education} />
         </div>
       </div>
     );

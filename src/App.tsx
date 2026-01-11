@@ -1,17 +1,14 @@
 import './App.css'
 import { Navbar } from './components/Navbar';
+import { Home } from './sections';
 
 function App() {
   return (
     <main className='relative scroll-smooth'>
       <Navbar />
 
-      <div className="bg-[url(/react.svg)]">
-        <div className="bg-white/30 backdrop-blur-sm ..."></div>
-      </div>
-
       <section id='home' className='min-h-screen flex items-center justify-center'>
-        <h1 className='text-5xl font-bold'>HOME</h1>
+        <Home />
       </section>
 
       <section id='projects' className='min-h-screen'>

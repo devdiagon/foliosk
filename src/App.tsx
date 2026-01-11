@@ -1,6 +1,5 @@
-import './App.css'
 import { Navbar } from './components/Navbar';
-import { Home } from './sections';
+import { Education, Home, Projects } from './sections';
 
 function App() {
   return (
@@ -12,11 +11,11 @@ function App() {
       </section>
 
       <section id='projects' className='min-h-screen scroll-mt-24'>
-        <h2>Projects</h2>
+        <Projects />
       </section>
 
       <section id='education' className='min-h-screen scroll-mt-24'>
-        <h2>Education</h2>
+        <Education />
       </section>
 
       <section id='about-me' className='min-h-screen scroll-mt-24'>

@@ -5,7 +5,7 @@ import { IoIosMail } from "react-icons/io";
 export const Home = () => {
 
   return (
-    <div className="flex flex-col max-w-md p-2 gap-4">
+    <div className="flex flex-col max-w-md p-2 gap-4 items-center text-center">
       <AnimText />
       <p className="text-md">
         Software developer who enjoys creating useful solutions for the community. I love creating user interfaces for

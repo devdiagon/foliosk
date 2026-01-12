@@ -8,33 +8,37 @@ interface ProjectItemProps {
 }
 
 export const ProjectItem = ({ project }: ProjectItemProps) => {
+  const hasImage = project.image !== undefined;
+
   return (
     <div
-      className="
+      className={`
         grid
-        grid-cols-1
-        md:grid-cols-[140px_1fr]
         gap-6
         border
         border-gray-200
         p-6
         shadow-[3px_3px_0px_rgba(0,0,0,0.1)]
-      "
+        ${hasImage ? "grid-cols-1 md:grid-cols-[140px_1fr]" : "grid-cols-1"}
+      `}
     >
       {/* Image */}
-      <div className="flex items-center justify-center">
-        {project.image ? (
-          <img
-            src={project.image}
-            alt={project.name}
-            className="w-full h-28 object-cover rounded-md"
-          />
-        ) : (
-          <div className="w-full h-28 flex items-center justify-center bg-gray-100 rounded-xl">
-            <FaImage className="text-gray-400 text-3xl" />
-          </div>
-        )}
-      </div>
+      {hasImage && (
+        <div className="flex items-center justify-center">
+          {project.image ? (
+            <img
+              src={project.image}
+              alt={project.name}
+              className="w-full h-28 object-cover rounded-md"
+            />
+          ) : (
+            <div className="w-full h-28 flex items-center justify-center bg-gray-100 rounded-xl">
+              <FaImage className="text-gray-400 text-3xl" />
+            </div>
+          )}
+        </div>
+      )}
+
 
       {/* Content */}
       <div className="flex flex-col gap-4">

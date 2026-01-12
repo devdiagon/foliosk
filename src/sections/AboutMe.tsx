@@ -20,7 +20,7 @@ export const AboutMe = () => {
 
           <div className="w-1/2 text-left">
             <p className="text-gray-600 leading-relaxed">
-              My name is Federick Tipán (you can call me Fred), I'm from Quito, Ecuador. I've got involved in the world of programming because I love seeing my creations to be useful for a community. In fact, that's how my interest in this field began, when I took the courage to launch my first project TE+, to the public.
+              My name is Frederick Tipán (you can call me Fred), I'm from Quito, Ecuador. I've got involved in the world of programming because I love seeing my creations to be useful for a community. In fact, that's how my interest in this field began, when I took the courage to launch my first project TE+, to the public.
             </p>
             <p className="text-gray-600 leading-relaxed mt-2">
               Currently, I'm most interested in frontend and mobile development, more over into UI/UX concepts. I believe that even the simplest interfaces shouldn't be used with outdated designs. However, I also keep training other logical programming skills such as backend development and databases.

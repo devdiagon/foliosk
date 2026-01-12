@@ -26,7 +26,7 @@ export const education: Milestone[] = [
   },
   {
     title: "Cambridge Assessment English",
-    description: "B2 C grade certificate",
+    description: "B2, C grade certificate",
     location: "Quito, Ecuador",
     period: "2021",
   },

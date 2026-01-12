@@ -1,6 +1,9 @@
 import { FaRegUser } from "react-icons/fa";
 import { Badge } from "../components";
 import { MdOutlineTranslate } from "react-icons/md";
+import Stack from "../components/Stack";
+import { profiles } from "../content";
+
 
 export const AboutMe = () => {
   return (
@@ -17,7 +20,7 @@ export const AboutMe = () => {
 
           <div className="w-1/2 text-left">
             <p className="text-gray-600 leading-relaxed">
-              My name is Federick Tipán (you can call me Fred), and I'm from Quito, Ecuador. I've got involved in the world of programming because I love seeing my creations to be useful for a community. In fact, that's how my interest in this field began, when I took the courage to launch my first project TE+, to the public.
+              My name is Federick Tipán (you can call me Fred), I'm from Quito, Ecuador. I've got involved in the world of programming because I love seeing my creations to be useful for a community. In fact, that's how my interest in this field began, when I took the courage to launch my first project TE+, to the public.
             </p>
             <p className="text-gray-600 leading-relaxed mt-2">
               Currently, I'm most interested in frontend and mobile development, more over into UI/UX concepts. I believe that even the simplest interfaces shouldn't be used with outdated designs. However, I also keep training other logical programming skills such as backend development and databases.
@@ -32,15 +35,11 @@ export const AboutMe = () => {
 
           <div className="w-1/2 flex flex-col items-center justify-center gap-4">
 
-            <div className="w-32 h-32 rounded-lg overflow-hidden">
-              <img
-                src="ruta-de-tu-imagen.jpg"
-                alt="Descripción"
-                className="w-full h-full object-cover"
-              />
+            <div className="w-64 h-64">
+              <Stack autoplay cards={profiles} />
             </div>
-            
-            <div className="flex flex-wrap gap-2 justify-center">
+
+            <div className="flex flex-wrap gap-2 justify-center mt-4">
               <Badge label="English (B2)"icon={MdOutlineTranslate} />
               <Badge label="Spanish (native)" icon={MdOutlineTranslate} />
             </div>

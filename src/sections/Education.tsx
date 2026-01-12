@@ -11,8 +11,7 @@ export const Education = () => {
             Education
           </h2>
         </header>
-  
-        {/* Contenido */}
+        
         <div className="w-full min-h-[120px]">
           <MilestoneTimeline milestones={education} />
         </div>

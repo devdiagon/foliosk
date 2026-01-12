@@ -1,4 +1,6 @@
 import { FaCubes } from "react-icons/fa6";
+import { ProjectItem } from "../components/ProjectItem";
+import { projects } from "../content";
 
 export const Projects = () => {
   return (
@@ -10,9 +12,10 @@ export const Projects = () => {
         </h2>
       </header>
 
-      {/* Contenido */}
-      <div className="w-full min-h-[120px] bg-white/60 backdrop-blur-md rounded-2xl p-6 shadow-sm">
-        
+      <div className="w-full min-h-[120px] grid grid-cols-1 md:grid-cols-2 gap-6">
+        {projects.map((project, index) => (
+          <ProjectItem key={index} project={project} />
+        ))}
       </div>
     </div>
   );

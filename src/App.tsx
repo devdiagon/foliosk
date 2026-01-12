@@ -6,7 +6,7 @@ function App() {
     <main className='relative scroll-smooth'>
       <Navbar />
 
-      <section id='home' className='mt-24 scroll-mt-24 flex items-center justify-center'>
+      <section id='home' className='pt-24 scroll-mt-24 flex items-center justify-center'>
         <Home />
       </section>
 

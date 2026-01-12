@@ -15,6 +15,7 @@ export const ProjectItem = ({ project }: ProjectItemProps) => {
       className={`
         grid
         gap-6
+        bg-[#f8f8f8]
         border
         border-gray-200
         p-6

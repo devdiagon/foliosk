@@ -1,10 +1,21 @@
 import type { IconType } from "react-icons";
-import { FaJava, FaAngular, FaDocker, FaReact } from "react-icons/fa";
+import { FaJava, FaAngular, FaDocker, FaReact, FaPython } from "react-icons/fa";
 import { IoIosCube } from "react-icons/io";
-import { SiModrinth, SiMongodb,SiSpring, SiSqlite, SiTypescript } from "react-icons/si";
+import { 
+  SiFirebase,
+  SiGooglemaps,
+  SiModrinth,
+  SiMongodb,
+  SiOpenstreetmap,
+  SiQgis,
+  SiSpring,
+  SiSqlite,
+  SiStreamlit,
+  SiTypescript
+} from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbBrandKotlin } from "react-icons/tb";
-import { FaDartLang } from "react-icons/fa6";
+import { FaDartLang, FaFlutter } from "react-icons/fa6";
 import { IoLogoElectron } from "react-icons/io5";
 
 export interface Project {
@@ -27,7 +38,7 @@ export const projects: Project[] = [
   {
     name: "Technical Enchant+",
     description: "It's a datapack that adds a new custom enchantment ecosystem to Minecraft. These enchantments enhance gameplay by introducing new mechanics, configurations & external integration via addons or complements.",
-    image: "https://static.planetminecraft.com/files/image/minecraft/data-pack/2021/151/15124496-portada_l.jpg",
+    image: "assets/img/projects/teplus_banner.jpg",
     technologies: [
       {
         label: "mcfunction",
@@ -44,7 +55,7 @@ export const projects: Project[] = [
   {
     name: "Organivent",
     description: "Desktop app to help managing musical events, including staff, invoices, schedules, and equipment.",
-    image: "https://github.com/devdiagon/OOPSW14575-BIT_CODERZ/blob/main/06-Code/Organivent/src/main/resources/images/organivent_icon.jpeg?raw=true",
+    image: "assets/img/projects/organivent_icon.jpeg",
     technologies: [
       {
         label: "Java",
@@ -56,6 +67,27 @@ export const projects: Project[] = [
       }
     ],
     repository: "https://github.com/devdiagon/OOPSW14575-BIT_CODERZ",
+    url: null,
+  },
+  {
+    name: "Packlead",
+    description: "Realtime tracking mobile app. Allows to manage orders and track the current location of dispatchers using a map.",
+    image: "assets/img/projects/packlead_icon.png",
+    technologies: [
+      {
+        label: "Flutter",
+        icon: FaFlutter,
+      },
+      {
+        label: "Firebase",
+        icon: SiFirebase ,
+      },
+      {
+        label: "Google Maps",
+        icon: SiGooglemaps,
+      }
+    ],
+    repository: "https://github.com/Saint-Roche-Microsystems/packlead",
     url: null,
   },
   {
@@ -80,6 +112,30 @@ export const projects: Project[] = [
       }
     ],
     repository: "https://github.com/devdiagon/Spring-API",
+    url: null,
+  },
+  {
+    name: "GeonsitQ",
+    description: "Urban recommendation system based on geospatial and Open Street Map data analisis for the city of Quito. It organizes its codebase with various design patterns.",
+    technologies: [
+      {
+        label: "Python",
+        icon: FaPython,
+      },
+      {
+        label: "Streamlit",
+        icon: SiStreamlit,
+      },
+      {
+        label: "Shapefiles",
+        icon: SiQgis, 
+      },
+      {
+        label: "OSM",
+        icon: SiOpenstreetmap,
+      },
+    ],
+    repository: "https://github.com/devdiagon/GeonsitQ",
     url: null,
   },
   {

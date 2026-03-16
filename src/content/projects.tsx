@@ -15,7 +15,7 @@ import {
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbBrandKotlin } from "react-icons/tb";
-import { FaDartLang, FaFlutter } from "react-icons/fa6";
+import { FaFlutter } from "react-icons/fa6";
 import { IoLogoElectron } from "react-icons/io5";
 
 export interface Project {
@@ -53,23 +53,6 @@ export const projects: Project[] = [
     }
   },
   {
-    name: "Organivent",
-    description: "Desktop app to help managing musical events, including staff, invoices, schedules, and equipment.",
-    image: "assets/img/projects/organivent_icon.jpeg",
-    technologies: [
-      {
-        label: "Java",
-        icon: FaJava,
-      },
-      {
-        label: "MongoDB",
-        icon: SiMongodb,
-      }
-    ],
-    repository: "https://github.com/devdiagon/OOPSW14575-BIT_CODERZ",
-    url: null,
-  },
-  {
     name: "Packlead",
     description: "Realtime tracking mobile app. Allows to manage orders and track the current location of dispatchers using a map.",
     image: "assets/img/projects/packlead_icon.png",
@@ -88,6 +71,31 @@ export const projects: Project[] = [
       }
     ],
     repository: "https://github.com/Saint-Roche-Microsystems/packlead",
+    url: null,
+  },
+  {
+    name: "Voy!",
+    description: "Desktop app to help manage the vehicle routes of Rosaprima farms, generating reports for each trip.",
+    image: "assets/img/projects/voy_icon.png",
+    technologies: [
+      {
+        label: "React",
+        icon: FaReact,
+      },
+      {
+        label: "TypeScript",
+        icon: SiTypescript,
+      },
+      {
+        label: "Electron",
+        icon: IoLogoElectron,
+      },
+      {
+        label: "SQLite",
+        icon: SiSqlite,
+      }
+    ],
+    repository: "https://github.com/devdiagon/ya-void",
     url: null,
   },
   {
@@ -115,8 +123,26 @@ export const projects: Project[] = [
     url: null,
   },
   {
+    name: "Organivent",
+    description: "Desktop app to help managing musical events, including staff, invoices, schedules, and equipment.",
+    image: "assets/img/projects/organivent_icon.jpeg",
+    technologies: [
+      {
+        label: "Java",
+        icon: FaJava,
+      },
+      {
+        label: "MongoDB",
+        icon: SiMongodb,
+      }
+    ],
+    repository: "https://github.com/devdiagon/OOPSW14575-BIT_CODERZ",
+    url: null,
+  },
+  {
     name: "GeonsitQ",
     description: "Urban recommendation system based on geospatial and Open Street Map data analisis for the city of Quito. It organizes its codebase with various design patterns.",
+    image: "assets/img/projects/geonsitq_icon.png",
     technologies: [
       {
         label: "Python",
@@ -159,35 +185,11 @@ export const projects: Project[] = [
     description: "Mobile app that allows to discover and search for different movies using the ThemovieDB API. Includes features such as searching, filtering and pagination.",
     technologies: [
       {
-        label: "Dart",
-        icon: FaDartLang,
+        label: "Flutter",
+        icon: FaFlutter,
       }
     ],
     repository: "https://github.com/Saint-Roche-Microsystems/Filmsit",
-    url: null,
-  },
-  {
-    name: "Ya Void",
-    description: "[In progress] Desktop app to help manage the vehicle routes of Rosaprima farms.",
-    technologies: [
-      {
-        label: "React",
-        icon: FaReact,
-      },
-      {
-        label: "TypeScript",
-        icon: SiTypescript,
-      },
-      {
-        label: "Electron",
-        icon: IoLogoElectron,
-      },
-      {
-        label: "SQLite",
-        icon: SiSqlite,
-      }
-    ],
-    repository: "https://github.com/devdiagon/ya-void",
     url: null,
   },
 ];

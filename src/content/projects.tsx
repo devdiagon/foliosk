@@ -1,21 +1,20 @@
 import type { IconType } from "react-icons";
-import { FaJava, FaAngular, FaDocker, FaReact, FaPython } from "react-icons/fa";
+import { FaJava, FaReact, FaPython } from "react-icons/fa";
 import { IoIosCube } from "react-icons/io";
 import { 
+  SiBlender,
   SiFirebase,
   SiGooglemaps,
   SiModrinth,
   SiMongodb,
   SiOpenstreetmap,
   SiQgis,
-  SiSpring,
   SiSqlite,
   SiStreamlit,
   SiTypescript
 } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
-import { TbBrandKotlin } from "react-icons/tb";
-import { FaFlutter } from "react-icons/fa6";
+import { TbBrandCSharp, TbBrandKotlin, TbInfoOctagon } from "react-icons/tb";
+import { FaFlutter, FaUnity } from "react-icons/fa6";
 import { IoLogoElectron } from "react-icons/io5";
 
 export interface Project {
@@ -70,7 +69,7 @@ export const projects: Project[] = [
         icon: SiGooglemaps,
       }
     ],
-    repository: "https://github.com/Saint-Roche-Microsystems/packlead",
+    repository: "https://github.com/devdiagon/packlead",
     url: null,
   },
   {
@@ -99,28 +98,29 @@ export const projects: Project[] = [
     url: null,
   },
   {
-    name: "Spring API",
-    description: "Simple web application for managing products and their categories using microservices architecture. It can be deployed using Docker containers.",
+    name: "Yona-Biker",
+    description: "Arcade delivery 3D videogame. For Windows with keyboard, gamepad and VR control support.",
+    image: "assets/img/projects/yona-biker_icon.png",
     technologies: [
       {
-        label: "Angular",
-        icon: FaAngular,
+        label: "Unity",
+        icon: FaUnity,
       },
       {
-        label: "Spring",
-        icon: SiSpring,
+        label: "C Sharp",
+        icon: TbBrandCSharp,
       },
       {
-        label: "MySQL",
-        icon: GrMysql,
-      },
-      {
-        label: "Docker",
-        icon: FaDocker,
+        label: "Blender",
+        icon: SiBlender,
       }
     ],
-    repository: "https://github.com/devdiagon/Spring-API",
-    url: null,
+    repository: "https://github.com/devdiagon/yona-biker",
+    url: {
+      label: "Request DEMO",
+      icon: TbInfoOctagon,
+      link: "mailto:fredericktimo@gmail.com?subject=Request%20for%20Yona-Biker%20DEMO&body=Hello,%0A%0AI%20would%20like%20to%20request%20a%20DEMO%20of%20the%20Yona-Biker%20game.%0A%0AThank%20you.",
+    }
   },
   {
     name: "Organivent",
